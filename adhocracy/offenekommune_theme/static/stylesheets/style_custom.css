@@ -99,6 +99,7 @@ body.logged_in #nav li a {
 #main .ui-widget-header {
   border:none;
   background-color: transparent;
+  background: url('/static_theme/index_files/white-50.png') repeat bottom center;
   padding-top: 14px;
 }
 #tabs-1 > div,
