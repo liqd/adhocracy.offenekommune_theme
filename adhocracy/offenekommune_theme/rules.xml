@@ -33,6 +33,7 @@
 
     <!--Fix wordpress links -->
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
+    <replace content="//a[@class='staticlink_imprint']/attribute::href" ><xsl:attribute name="href">/_pages/about/impressum</xsl:attribute></replace>
 
     <!--Body-->
     <copy theme="/html/body" content="/html/body" />
@@ -43,21 +44,22 @@
        <div id="about_menu">
         <ul>
           <li>
-            <a href="/_pages/about" class="" rel="" title="About" id="about_menu_link">Über diese Seite</a>
+            <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
             <ul class="children">
               <li class="page_item page-item-1316">
-                <a href="http://testing.adhocracy.cc/_pages/about/uber-uns/" title="Über uns">Über uns</a>
-              </li>
-              <li class="page_item page-item-1318"><a href="http://testing.adhocracy.cc/_pages/about/adhocracy/" title="Adhocracy">Adhocracy</a>
+                <a href="/_pages/about/uber-adhocracy" title="Über OffeneKommune.de">Über OffeneKommune.de</a>
               </li>
               <li class="page_item page-item-1322">
-                <a href="http://testing.adhocracy.cc/_pages/about/ldsupport/" title="LDSupport">LDSupport</a>
+                <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
               </li>
               <li class="page_item page-item-1324">
-                <a href="http://testing.adhocracy.cc/_pages/about/impressum/" title="Impressum">Impressum</a>
+                <a href="/_pages/about/support" title="Support">Support</a>
               </li>
               <li class="page_item page-item-1326">
-                <a href="http://testing.adhocracy.cc/_pages/about/kontakt/" title="Kontakt">Kontakt</a>
+                <a href="/_pages/about/impressum" title="Impressum">Impressum</a>
+              </li>
+              <li class="page_item page-item-1326">
+                <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
               </li>
             </ul>
           </li>
@@ -72,21 +74,22 @@
        <div id="about_menu">
         <ul>
           <li class="current">
-            <a href="/_pages/about" rel="" title="About" id="about_menu_link">Über diese Seite</a>
+            <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
             <ul class="children">
               <li class="page_item page-item-1316">
-                <a href="http://testing.adhocracy.cc/_pages/about/uber-uns/" title="Über uns">Über uns</a>
-              </li>
-              <li class="page_item page-item-1318"><a href="http://testing.adhocracy.cc/_pages/about/adhocracy/" title="Adhocracy">Adhocracy</a>
+                <a href="/_pages/about/uber-adhocracy" title="Über uns">Über Adhocracy.de</a>
               </li>
               <li class="page_item page-item-1322">
-                <a href="http://testing.adhocracy.cc/_pages/about/ldsupport/" title="LDSupport">LDSupport</a>
+                <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
               </li>
               <li class="page_item page-item-1324">
-                <a href="http://testing.adhocracy.cc/_pages/about/impressum/" title="Impressum">Impressum</a>
+                <a href="/_pages/about/support" title="Support">Support</a>
               </li>
               <li class="page_item page-item-1326">
-                <a href="http://testing.adhocracy.cc/_pages/about/kontakt/" title="Kontakt">Kontakt</a>
+                <a href="/_pages/about/impressum" title="Impressum">Impressum</a>
+              </li>
+              <li class="page_item page-item-1326">
+                <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
               </li>
             </ul>
           </li>
@@ -99,15 +102,19 @@
     <!--Navigation - engagieren-->
     <replace css:content="li#nav_dummy">
       <li>
-        <a href="/_pages/engagieren/" title="Engagieren">Engagieren</a>
+        <a href="/_pages/engagieren" title="Engagieren">Engagieren</a>
         <ul class="children">
             <li class="page_item page-item-1333">
-              <a href="http://testing.adhocracy.cc/_pages/engagieren/spenden/" title="Spenden">Spenden</a>
+              <a href="/_pages/engagieren/spenden" title="Spenden">Spenden</a>
             </li>
             <li class="page_item page-item-1335">
-              <a href="http://testing.adhocracy.cc/_pages/engagieren/fordermitgliedschaft/" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
+              <a href="/_pages/engagieren/fordermitgliedschaft" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
             </li>
-            <li class="page_item page-item-1337"><a href="http://testing.adhocracy.cc/_pages/engagieren/mitmachen/" title="Mitmachen">Mitmachen</a>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/engagieren/mitarbeiten" title="Helfen und Mitarbeiten">Helfen und Mitarbeiten</a>
+            </li>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/engagieren/offiziell-nutzen" title="Offiziell Nutzen">Offiziell Nutzen</a>
             </li>
          </ul>
       </li>
@@ -115,20 +122,62 @@
     <rules if-path="/_pages/engagieren">
      <replace css:content="li#nav_dummy">
         <li class="current">
-          <a href="/_pages/engagieren/" title="Engagieren">Engagieren</a>
+          <a href="/_pages/engagieren" title="Engagieren">Engagieren</a>
           <ul class="children">
             <li class="page_item page-item-1333">
-              <a href="http://testing.adhocracy.cc/_pages/engagieren/spenden/" title="Spenden">Spenden</a>
+              <a href="/_pages/engagieren/spenden" title="Spenden">Spenden</a>
             </li>
             <li class="page_item page-item-1335">
-              <a href="http://testing.adhocracy.cc/_pages/engagieren/fordermitgliedschaft/" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
+              <a href="/_pages/engagieren/fordermitgliedschaft" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
             </li>
-            <li class="page_item page-item-1337"><a href="http://testing.adhocracy.cc/_pages/engagieren/mitmachen/" title="Mitmachen">Mitmachen</a>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/engagieren/mitarbeiten" title="Helfen und Mitarbeiten">Helfen und Mitarbeiten</a>
+            </li>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/engagieren/offiziell-nutzen" title="Offiziell Nutzen">Offiziell Nutzen</a>
             </li>
           </ul>
         </li>
      </replace>
      <replace content="//li[@id='nav_help']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
+     <replace content="//li[@id='nav_home']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
+     <replace content="//li[@id='nav_instances']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
+    </rules>
+
+    <!--Navigation - help-->
+    <replace css:content="li#nav_help">
+      <li class="" id="nav_help">
+        <a href="/_pages/help" title="">Hilfe</a>
+        <ul class="children">
+          <li class="page_item page-item-1333">
+            <a href="/_pages/help/anleitungen" title="Anleitungen">Anleitungen</a>
+          </li>
+          <li class="page_item page-item-1335">
+            <a href="/_pages/help/faq" title="FAQs">FAQs</a>
+          </li>
+          <li class="page_item page-item-1337">
+            <a href="/_pages/help/support" title="Support">Support</a>
+          </li>
+        </ul>
+      </li>
+    </replace>
+    <rules if-path="/_pages/help">
+     <replace css:content="li#nav_help">
+        <li class="current" id="nav_help">
+          <a href="/_pages/help" title="">Hilfe</a>
+          <ul class="children">
+            <li class="page_item page-item-1333">
+              <a href="/_pages/help/anleitungen" title="Anleitungen">Anleitungen</a>
+            </li>
+            <li class="page_item page-item-1335">
+              <a href="/_pages/help/faq" title="FAQs">FAQs</a>
+            </li>
+            <li class="page_item page-item-1337">
+              <a href="/_pages/help/support" title="Support">Support</a>
+            </li>
+          </ul>
+        </li>
+     </replace>
      <replace content="//li[@id='nav_home']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
      <replace content="//li[@id='nav_instances']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
     </rules>
