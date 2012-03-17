@@ -33,7 +33,7 @@
 
     <!--Fix wordpress links -->
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
-    <replace content="//a[@class='staticlink_imprint']/attribute::href" ><xsl:attribute name="href">/_pages/about/impressum</xsl:attribute></replace>
+    <replace content="//a[@class='staticlink_imprint']/attribute::href" ><xsl:attribute name="href">/_pages/about/imprint</xsl:attribute></replace>
 
     <!--Body-->
     <copy theme="/html/body" content="/html/body" />
@@ -47,7 +47,7 @@
             <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
             <ul class="children">
               <li class="page_item page-item-1316">
-                <a href="/_pages/about/uber-adhocracy" title="Über OffeneKommune.de">Über OffeneKommune.de</a>
+                <a href="/_pages/about/uber-offenekommune-de" title="Über OffeneKommune.de">Über OffeneKommune.de</a>
               </li>
               <li class="page_item page-item-1322">
                 <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
@@ -56,7 +56,7 @@
                 <a href="/_pages/about/support" title="Support">Support</a>
               </li>
               <li class="page_item page-item-1326">
-                <a href="/_pages/about/impressum" title="Impressum">Impressum</a>
+                <a href="/_pages/about/imprint" title="Impressum">Impressum</a>
               </li>
               <li class="page_item page-item-1326">
                 <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
@@ -77,7 +77,7 @@
             <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
             <ul class="children">
               <li class="page_item page-item-1316">
-                <a href="/_pages/about/uber-adhocracy" title="Über uns">Über Adhocracy.de</a>
+                <a href="/_pages/about/uber-offenekommune-de" title="Über OffeneKommune.de">Über OffeneKommune.de</a>
               </li>
               <li class="page_item page-item-1322">
                 <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
@@ -86,7 +86,7 @@
                 <a href="/_pages/about/support" title="Support">Support</a>
               </li>
               <li class="page_item page-item-1326">
-                <a href="/_pages/about/impressum" title="Impressum">Impressum</a>
+                <a href="/_pages/about/imprint" title="Impressum">Impressum</a>
               </li>
               <li class="page_item page-item-1326">
                 <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
