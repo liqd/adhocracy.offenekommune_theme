@@ -41,7 +41,7 @@
     <!--Logo-->
       <!-- if body.logged_in -->
       <replace content="//a[@id='logo']/img/attribute::src" if-content="//body[@class='logged_in']"><xsl:attribute name="src">/static_theme/static/images/offene_kommune_logo_small.png</xsl:attribute></replace>
-      <!-- else -->
+      <!-- if not body.logged_in -->
       <replace content="//a[@id='logo']/img/attribute::src" if-content="not(//body[@class='logged_in'])"><xsl:attribute name="src">/static_theme/static/images/offene_kommune_logo_large.png</xsl:attribute></replace>
 
     <!--Navigation - about menu-->
