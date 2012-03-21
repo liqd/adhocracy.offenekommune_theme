@@ -93,8 +93,7 @@ a.button, .submit input, submit button {
 }
 
 /* Font */
-
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, a, legend, .tabnav li a.active, .tabnav li a:hover  {
   color: #323232;
 }
 
@@ -124,6 +123,22 @@ label {
   border-top: 4px solid white !important;
 }
 
+.content_list {
+  background: #f7f6f2;
+  margin-bottom: 22px;
+}
+li.content_box {
+  background: #fff;
+}
+li.content_box h3, li.content_box .meta {
+  padding: 0 11px;
+}
+li.content_box:first-child {
+  background: url("/static_theme/static/images/element_line_dotted_small.gif") repeat-x scroll left top #fff;
+}
+li.content_box:nth-child(2n+2) {
+  background: #f7f6f2;
+}
 /* Map markers */
 
 .marker img {
@@ -133,17 +148,17 @@ label {
   width: 24px;
   height: 31px;
 }
-
-.marker_A {background-position: 0;}
-.marker_B {background-position: 0 -31px;}
-.marker_C {background-position: 0 -62px;}
-.marker_D {background-position: 0 -93px;}
-.marker_E {background-position: 0 -124px;}
-.marker_F {background-position: 0 -155px;}
-.marker_G {background-position: 0 -186px;}
-.marker_H {background-position: 0 -217px;}
-.marker_I {background-position: 0 -248px;}
-.marker_J {background-position: 0 -279px;}
+  /* important as dirty hack */
+.marker_A {background-position: 0 0 !important;}
+.marker_B {background-position: 0 -31px !important;}
+.marker_C {background-position: 0 -62px !important;}
+.marker_D {background-position: 0 -93px !important;}
+.marker_E {background-position: 0 -124px !important;}
+.marker_F {background-position: 0 -155px !important;}
+.marker_G {background-position: 0 -186px !important;}
+.marker_H {background-position: 0 -217px !important;}
+.marker_I {background-position: 0 -248px !important;}
+.marker_J {background-position: 0 -279px !important;}
 
 /* extensive border solution below needs to be refined */
 
