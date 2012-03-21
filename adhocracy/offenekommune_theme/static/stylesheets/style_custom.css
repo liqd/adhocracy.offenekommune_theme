@@ -124,7 +124,8 @@ label {
 }
 
 .content_list {
-  background: #f7f6f2;
+/* disturbed on proposal list, needed somewhere else? */
+/*  background: #f7f6f4; */
   margin-bottom: 22px;
 }
 li.content_box {
@@ -133,11 +134,10 @@ li.content_box {
 li.content_box h3, li.content_box .meta {
   padding: 0 11px;
 }
-li.content_box:first-child {
-  background: url("/static_theme/static/images/element_line_dotted_small.gif") repeat-x scroll left top #fff;
-}
 li.content_box:nth-child(2n+2) {
-  background: #f7f6f2;
+  background: #f7f6f4;
+  border-bottom: 1px dotted #CCC;
+  border-top: 1px dotted #CCC;
 }
 
 /* extensive border solution below needs to be refined */
