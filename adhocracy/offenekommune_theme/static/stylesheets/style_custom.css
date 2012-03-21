@@ -141,6 +141,13 @@ li.content_box:nth-child(2n+2) {
 }
 /* Map markers */
 
+div.marker {
+  width: 24px;
+  height: 31px;
+  margin: 4px 11px 0 21px;
+  float: left;
+}
+
 .marker img {
   background-image: url('/images/map_markers_pink_a_j.png');
   background-position: 0 -310px;
