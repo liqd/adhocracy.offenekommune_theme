@@ -1,13 +1,155 @@
 /*****************************************************
 *  style_custom.css
 *
-*  Custom theme css to override the adhocracy css
+*  Custom offenekommune css to override adhocracy css
 *
 *  - Main navigation
 *  - Tabs onboarding aboutpage
 *
 ******************************************************/
 
+/* Link color */
+
+a {
+color: #3b893d;
+}
+
+/* Logo */
+#logo {
+height: 90px;
+}
+
+/* Navigation */
+
+#subnav li, #subnav li.current {
+  background-image: url('/static_theme/static/images/sprite_tab_navigation.png') !important;
+}
+#subnav li a {
+  color: #838383;
+}
+#subnav li.current a, #subnav li a:hover {
+  color: #333;
+}
+
+/* Button border, background, color */
+
+.vote, .vote.big, .vote_count, .button_small, .vote_up, .vote_down {
+  background-image: url('/static_theme/static/images/sprite_buttons_small.png') !important;
+}
+.vote, .vote.big, .follow_paper, .button_small, a.button, .submit input, submit button {
+  /* Naive border solution for now */
+  border: 1px solid #c1c1c1;
+}
+a.button_small, a.button, .submit input, submit button {
+  color: #333;
+}
+.vote_up, .vote_down {
+  background: url('/static_theme/static/images/sprite_buttons_small.png') repeat-x 0 -450px;
+}
+a.button, .submit input, submit button {
+  background-image: url('/static_theme/static/images/sprite_buttons.png');
+  height: 25px;
+  line-height: 25px;
+}
+
+.pager a, .pager span {
+  border: 1px solid white;
+  font-weight: bold;
+  background: none;
+  padding: 4px 14px;
+}
+.pager .current, .pager a:active, .pager a:hover {
+  border: 1px solid #c1c1c1;
+  background-image: url('/static_theme/static/images/sprite_buttons.png');
+  color: #333;
+}
+.pager a {
+  color: #3b893d;
+}
+
+.register {
+ line-height: 33px;
+}
+
+.register a.button {
+  background-position: 0 -600px;
+  border: 1px solid #3e753e;
+  font-size: 125%;
+  line-height: 33px;
+  height: 35px;
+  padding-right: 18px;
+}
+.register a:hover.button {
+  background-position: 0 -650px;
+}
+
+  /* Search */
+#searchform #searchsubmit, .list_form input.go {
+  color: #333;
+  background-image: url('/static_theme/static/images/button_grey.png');
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c2c2c2;
+}
+
+/* Font */
+
+h2, h3, h4 {
+  color: #323232;
+}
+
+label {
+  font-weight: normal;
+}
+
+/* Background */
+
+#header {
+  background-image: url('/static_theme/static/images/gradient_header.png');
+}
+
+#nav li.current {
+  background-image: url('/static_theme/static/images/gradient_navi_highlight.png');
+}
+
+#subheader {
+  background-image: url('/static_theme/static/images/tabs_bg_large.png');
+}
+
+.comment_form {
+  background-color: #fff;
+}
+.comments_list li {
+  background-color: #f7f6f4;
+  border-top: 4px solid white !important;
+}
+
+/* extensive border solution below needs to be refined */
+
+/*.vote.big {
+  background-image: none;
+  border-radius: 0;
+  height: 28px;
+}
+
+.vote_down, .vote_up {
+  background: url('/images/sprite_buttons_small.png') repeat-x 0 -450px;
+  border: 1px solid #c1c1c1;
+}
+
+.vote_down {
+  border-left: none;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.vote_count {
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: #4c954d;
+}*/
 
 /*Main navigation*/
 
