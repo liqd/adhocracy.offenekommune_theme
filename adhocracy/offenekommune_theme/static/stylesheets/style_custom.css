@@ -92,6 +92,17 @@ a.button, .submit input, submit button {
   border-color: #c2c2c2;
 }
 
+  /* Sprite icons overrides (close button mainly */
+
+.info_box .close_button, .overlay a.close,
+  .vote_up span, .vote_down span,
+  .vote.big .vote_up span,
+  .vote.big .vote_down span,
+  a.show_comments:after, a.new_comment:after
+{
+  background-image: url('/static_theme/static/images/sprite_icons.png');
+}
+
 /* Font */
 h1, h2, h3, h4, h5, a, legend, .tabnav li a.active, .tabnav li a:hover  {
   color: #323232;
