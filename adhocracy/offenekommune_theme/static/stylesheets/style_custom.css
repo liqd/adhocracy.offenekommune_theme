@@ -94,7 +94,7 @@ a.button, .submit input, submit button {
 
 /* Font */
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
   color: #323232;
 }
 
@@ -123,6 +123,27 @@ label {
   background-color: #f7f6f4;
   border-top: 4px solid white !important;
 }
+
+/* Map markers */
+
+.marker img {
+  background-image: url('/images/map_markers_pink_a_j.png');
+  background-position: 0 -310px;
+  float: left;
+  width: 24px;
+  height: 31px;
+}
+
+.marker_A {background-position: 0;}
+.marker_B {background-position: 0 -31px;}
+.marker_C {background-position: 0 -62px;}
+.marker_D {background-position: 0 -93px;}
+.marker_E {background-position: 0 -124px;}
+.marker_F {background-position: 0 -155px;}
+.marker_G {background-position: 0 -186px;}
+.marker_H {background-position: 0 -217px;}
+.marker_I {background-position: 0 -248px;}
+.marker_J {background-position: 0 -279px;}
 
 /* extensive border solution below needs to be refined */
 
