@@ -69,8 +69,20 @@ a.button_small, a.button, .submit input, submit button {
 }
 a.button, .submit input, submit button {
   background-image: url('/static_theme/static/images/sprite_buttons.png');
+  color: #333;
   height: 25px;
   line-height: 25px;
+}
+.pager .current, .pager a:active,
+.pager a:hover,
+a.button,
+a.follow_paper,
+.submit input, .submit button {
+  background-image: url("/static_theme/static/images/sprite_buttons.png") !important;
+}
+.submit input, .submit button {
+  color: #333;
+  border: 1px solid #c1c1c1;
 }
 
 .pager a, .pager span {
