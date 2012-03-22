@@ -46,10 +46,7 @@
 
     <!--Navigation - about menu-->
     <replace css:content="li#nav_about">
-      <li>
-       <div id="about_menu">
-        <ul>
-          <li>
+      <li id="about_menu" class="">
             <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
             <ul class="children">
               <li class="page_item page-item-1316">
@@ -68,18 +65,12 @@
                 <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
               </li>
             </ul>
-          </li>
-        </ul>
-       </div>
        </li>
     </replace>
     <!--TODO: This is not DRY joka-->
     <rules if-path="/_pages/about">
      <replace css:content="li#nav_about">
-      <li>
-       <div id="about_menu">
-        <ul>
-          <li class="current">
+      <li id="about_menu" class="current">
             <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
             <ul class="children">
               <li class="page_item page-item-1316">
@@ -98,9 +89,6 @@
                 <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
               </li>
             </ul>
-          </li>
-        </ul>
-       </div>
       </li>
      </replace>
     </rules>

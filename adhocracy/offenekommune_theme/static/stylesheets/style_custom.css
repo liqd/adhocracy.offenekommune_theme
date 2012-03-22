@@ -22,7 +22,7 @@ height: 90px;
 /* Navigation */
 
 #subnav li, #subnav li.current {
-  background-image: url('/static_theme/static/images/sprite_tab_navigation.png') !important;
+  background-image: url('/static_theme/static/images/sprite_tab_navigation.png');
 }
 #subnav li a {
   color: #838383;
@@ -30,11 +30,22 @@ height: 90px;
 #subnav li.current a, #subnav li a:hover {
   color: #333;
 }
-
+#nav li.current {
+  background-image: url('/static_theme/static/images/gradient_navi_highlight.png');
+}
+#nav ul.children {
+  background-image: url('/static_theme/static/images/gradient_navi_dropdown.png');
+}
+#nav li:hover {
+  background-image: url('/static_theme/static/images/gradient_navi_hover.png');
+}
+.menu.hlist {
+padding-top: 8px;
+}
 /* Button border, background, color */
 
 .vote, .vote.big, .vote_count, .button_small, .vote_up, .vote_down {
-  background-image: url('/static_theme/static/images/sprite_buttons_small.png') !important;
+  background-image: url('/static_theme/static/images/sprite_buttons_small.png');
 }
 .vote, .vote.big, .follow_paper, .button_small, a.button, .submit input, submit button {
   /* Naive border solution for now */
@@ -117,15 +128,9 @@ label {
 #header {
   background-image: url('/static_theme/static/images/gradient_header.png');
 }
-
-#nav li.current {
-  background-image: url('/static_theme/static/images/gradient_navi_highlight.png');
-}
-
 #subheader {
   background-image: url('/static_theme/static/images/tabs_bg_large.png');
 }
-
 .comment_form {
   background-color: #fff;
 }
@@ -160,7 +165,7 @@ li.content_box:nth-child(2n+2) {
 }
 
 .vote_down, .vote_up {
-  background: url('/images/sprite_buttons_small.png') repeat-x 0 -450px;
+  background: url('/static_theme/static/images/sprite_buttons_small.png') repeat-x 0 -450px;
   border: 1px solid #c1c1c1;
 }
 
@@ -294,7 +299,7 @@ body.logged_in #nav li a {
 #main .ui-tabs-nav li {
   height: 36px;
   line-height: 36px;
-  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -60px;
+  background: url('/static_theme/static/images/sprite_tab_navigation.png') repeat-x 0 -60px;
 }
 #main .ui-tabs-nav li a {
   color: #fff;
@@ -308,7 +313,7 @@ body.logged_in #nav li a {
   color: #2D3441;
 }
 #main .ui-tabs-nav li.ui-state-active {
-  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -10px;
+  background: url('/static_theme/static/images/sprite_tab_navigation.png') repeat-x 0 -10px;
 }
 #main .ui-tabs-nav li:hover a {
   color: #fff;
@@ -317,7 +322,7 @@ body.logged_in #nav li a {
   outline: none;
 }
 #main .ui-tabs-nav li:hover {
-  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -111px;
+  background: url('/static_theme/static/images/sprite_tab_navigation.png') repeat-x 0 -111px;
 }
 #main .ui-widget-header,
 #main .ui-tabs-nav li {
@@ -349,7 +354,7 @@ label.armhint {
 }
 
 #main.with_wordpress_tabs {
-  background-image: url('/images/tabs_bg_large.png');
+  background-image: url('/static_theme/static/images/tabs_bg_large.png');
   background-repeat: no-repeat;
   background-position: 50% -47px;
   margin: 0 0 60px;
