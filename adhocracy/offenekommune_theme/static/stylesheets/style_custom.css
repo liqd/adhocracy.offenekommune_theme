@@ -36,6 +36,9 @@ height: 90px;
 #nav ul.children {
   background-image: url('/static_theme/static/images/gradient_navi_dropdown.png');
 }
+#nav ul.children li {
+  background-image: url('/static_theme/static/images/line_navi_dropdown.png');
+}
 #nav li:hover {
   background-image: url('/static_theme/static/images/gradient_navi_hover.png');
 }
@@ -218,6 +221,10 @@ body.logged_in #nav li a {
   height: 24px;
 }
 
+#current_logo,
+#user_menu {
+  background-image: url('/static_theme/static/images/line_header.png');
+}
 
  /*Wordpress pages sidebar*/
 
