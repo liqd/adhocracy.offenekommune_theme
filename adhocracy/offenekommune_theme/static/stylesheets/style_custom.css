@@ -334,7 +334,7 @@ body.logged_in #nav li a {
   background: url('/static_theme/static/images/sprite_tab_navigation.png') repeat-x 0 -60px;
 }
 #main .ui-tabs-nav li a {
-  color: #fff;
+  color: #777;
   text-decoration: none;
   padding: 0 19px;
   display: block;
@@ -348,7 +348,7 @@ body.logged_in #nav li a {
   background: url('/static_theme/static/images/sprite_tab_navigation.png') repeat-x 0 -10px;
 }
 #main .ui-tabs-nav li:hover a {
-  color: #fff;
+  color: black;
 }
 #main .ui-tabs-nav li:focus a {
   outline: none;
