@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='adhocracy.adhocracy.offenekommune_theme',
+setup(name='adhocracy.offenekommune_theme',
       version=version,
       description="Offenekommune adhocracy theme, diazo based, merges in wordpress.",
       long_description=open("README.txt").read() + "\n" +
