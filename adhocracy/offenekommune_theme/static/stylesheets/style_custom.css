@@ -216,8 +216,8 @@ li.content_box:nth-child(2n+2) {
 #nav li {
   padding-top: 7px; /*make drop down menus work*/
 }
-body.logged_in #nav li,
-body.logged_in #nav li a {
+body.compact #nav li,
+body.compact #nav li a {
   height: 24px;
 }
 
