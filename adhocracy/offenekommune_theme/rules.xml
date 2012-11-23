@@ -33,7 +33,7 @@
 
     <!--Fix wordpress links -->
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
-    <replace content="//a[@class='staticlink_imprint']/attribute::href" ><xsl:attribute name="href">/_pages/about/imprint</xsl:attribute></replace>
+    <replace content="//a[@class='staticlink_imprint']/attribute::href" ><xsl:attribute name="href">/_pages/imprint</xsl:attribute></replace>
 
     <!--Body-->
     <replace theme="/html/body" content="/html/body" />
@@ -47,96 +47,97 @@
     <!--Navigation - about menu-->
     <replace css:content="li#nav_about">
       <li id="about_menu" class="">
-            <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
+            <a href="/_pages/das_projekt" class="" rel="" title="Das Projekt" id="about_menu_link">Das Projekt</a>
             <ul class="children">
               <li class="page_item page-item-1316">
-                <a href="/_pages/about/uber-offenekommune-de" title="Über OffeneKommune.de">Über OffeneKommune.de</a>
+                <a href="/_pages/das_projekt/uber-offenekommune-de" title="Über OffeneKommune.de">Über OffeneKommune.de</a>
               </li>
               <li class="page_item page-item-1322">
-                <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
+                  <a href="/_pages/das_projekt/offiziell-nutzen/" title="Offizielle Nutzung">Offizielle Nutzung</a>
               </li>
               <li class="page_item page-item-1323">
-                <a href="/_pages/about/beirat-2" title="Beirat">Beirat</a>
+                  <a href="/_pages/das_projekt/offiziell-nutzen/offizielle-nutzer/" title="Offizielle Nutzer">Offizielle Nutzer</a>
               </li>
               <li class="page_item page-item-1324">
-                <a href="/_pages/about/support" title="Support">Support</a>
+                  <a href="/_pages/das_projekt/partner_projekte/" title="Partnerprojekte">Partnerprojekte</a>
               </li>
               <li class="page_item page-item-1326">
-                <a href="/_pages/about/imprint" title="Impressum">Impressum</a>
-              </li>
-              <li class="page_item page-item-1326">
-                <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
+                <a href="/_pages/das_projekt/kontakt" title="Kontakt">Kontakt</a>
               </li>
             </ul>
        </li>
     </replace>
     <!--TODO: This is not DRY joka-->
-    <rules if-path="/_pages/about">
+    <rules if-path="/_pages/das_projekt">
      <replace css:content="li#nav_about">
-      <li id="about_menu" class="current">
-            <a href="/_pages/about" class="" rel="" title="Über diese Seite" id="about_menu_link">Über diese Seite</a>
+      <li class="current">
+            <a href="/_pages/das_projekt" class="" rel="" title="Das Projekt" id="about_menu_link">Das Projekt</a>
             <ul class="children">
               <li class="page_item page-item-1316">
-                <a href="/_pages/about/uber-offenekommune-de" title="Über OffeneKommune.de">Über OffeneKommune.de</a>
+                <a href="/_pages/das_projekt/uber-offenekommune-de" title="Über OffeneKommune.de">Über OffeneKommune.de</a>
               </li>
               <li class="page_item page-item-1322">
-                <a href="/_pages/about/akteure" title="Akteure">Akteure</a>
+                  <a href="/_pages/das_projekt/offiziell-nutzen/" title="Offizielle Nutzung">Offizielle Nutzung</a>
               </li>
               <li class="page_item page-item-1323">
-                <a href="/_pages/about/beirat-2" title="Beirat">Beirat</a>
+                  <a href="/_pages/das_projekt/offiziell-nutzen/offizielle-nutzer/" title="Offizielle Nutzer">Offizielle Nutzer</a>
               </li>
               <li class="page_item page-item-1324">
-                <a href="/_pages/about/support" title="Support">Support</a>
+                  <a href="/_pages/das_projekt/partner_projekte/" title="Partnerprojekte">Partnerprojekte</a>
               </li>
               <li class="page_item page-item-1326">
-                <a href="/_pages/about/imprint" title="Impressum">Impressum</a>
-              </li>
-              <li class="page_item page-item-1326">
-                <a href="/_pages/about/kontakt" title="Kontakt">Kontakt</a>
+                <a href="/_pages/das_projekt/kontakt" title="Kontakt">Kontakt</a>
               </li>
             </ul>
       </li>
      </replace>
+     <replace content="//li[@id='nav_home']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
     </rules>
 
     <!--Navigation - engagieren-->
     <replace css:content="li#nav_dummy">
       <li>
-        <a href="/_pages/engagieren" title="Engagieren">Engagieren</a>
+        <a href="/_pages/weiterentwicklung" title="Weiterentwicklung">Weiterentwicklung</a>
         <ul class="children">
             <li class="page_item page-item-1333">
-              <a href="/_pages/engagieren/spenden" title="Spenden">Spenden</a>
+              <a href="/_pages/weiterentwicklung/open_source" title="Open Source">Open Source</a>
+            </li>
+            <li class="page_item page-item-1334">
+                <a href="https://feedback.offenekommune.de/instance/feedback" title="Feedback">Feedback</a>
             </li>
             <li class="page_item page-item-1335">
-              <a href="/_pages/engagieren/fordermitgliedschaft" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
+                <a href="https://github.com/liqd/adhocracy" title="GitHub">GitHub</a>
             </li>
             <li class="page_item page-item-1337">
-              <a href="/_pages/engagieren/mitarbeiten" title="Helfen und Mitarbeiten">Helfen und Mitarbeiten</a>
+              <a href="/_pages/unterstutzung/mitarbeiten_und_helfen/" title="Mitarbeiten und Helfen">Mitarbeiten und Helfen</a>
             </li>
-            <li class="page_item page-item-1337">
-              <a href="/_pages/engagieren/offiziell-nutzen" title="Offiziell Nutzen">Offiziell Nutzen</a>
+            <li class="page_item page-item-1338">
+              <a href="/_pages/unterstutzung/spenden/" title="Spenden und Fördern">Spenden und Fördern</a>
             </li>
          </ul>
       </li>
     </replace>
-    <rules if-path="/_pages/engagieren">
+    <rules if-path="/_pages/weiterentwicklung">
      <replace css:content="li#nav_dummy">
         <li class="current">
-          <a href="/_pages/engagieren" title="Engagieren">Engagieren</a>
-          <ul class="children">
+        <a href="/_pages/weiterentwicklung" title="Weiterentwicklung">Weiterentwicklung</a>
+        <ul class="children">
             <li class="page_item page-item-1333">
-              <a href="/_pages/engagieren/spenden" title="Spenden">Spenden</a>
+              <a href="/_pages/weiterentwicklung/open_source" title="Open Source">Open Source</a>
+            </li>
+            <li class="page_item page-item-1334">
+                <a href="https://feedback.offenekommune.de/instance/feedback" title="Feedback">Feedback</a>
             </li>
             <li class="page_item page-item-1335">
-              <a href="/_pages/engagieren/fordermitgliedschaft" title="Fördermitgliedschaft">Fördermitgliedschaft</a>
+                <a href="https://github.com/liqd/adhocracy" title="GitHub">GitHub</a>
             </li>
             <li class="page_item page-item-1337">
-              <a href="/_pages/engagieren/mitarbeiten" title="Helfen und Mitarbeiten">Helfen und Mitarbeiten</a>
+              <a href="/_pages/unterstutzung/mitarbeiten_und_helfen/" title="Mitarbeiten und Helfen">Mitarbeiten und Helfen</a>
             </li>
-            <li class="page_item page-item-1337">
-              <a href="/_pages/engagieren/offiziell-nutzen" title="Offiziell Nutzen">Offiziell Nutzen</a>
+            <li class="page_item page-item-1338">
+              <a href="/_pages/unterstutzung/spenden/" title="Spenden und Fördern">Spenden und Fördern</a>
             </li>
-          </ul>
+         </ul>
         </li>
      </replace>
      <replace content="//li[@id='nav_help']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
@@ -147,35 +148,65 @@
     <!--Navigation - help-->
     <replace css:content="li#nav_help">
       <li class="" id="nav_help">
-        <a href="/_pages/help" title="">Hilfe</a>
+        <a href="/_pages/unterstutzung" title="">Support</a>
         <ul class="children">
+          <li class="page_item page-item-1332">
+            <a href="/_pages/unterstutzung/anleitungen/" title="Anleitungen">Anleitungen</a>
+          </li>
           <li class="page_item page-item-1333">
-            <a href="/_pages/help/anleitungen" title="Anleitungen">Anleitungen</a>
+              <a href="/_pages/unterstutzung/anleitungen/formatierungshilfe/" title="Formatierungshilfe">Formatierungshilfe</a>
+          </li>
+          <li class="page_item page-item-1334">
+            <a href="/_pages/unterstutzung/faq/" title="FAQs">FAQs</a>
           </li>
           <li class="page_item page-item-1335">
-            <a href="/_pages/help/faq" title="FAQs">FAQs</a>
+              <a href="/_pages/unterstutzung/technischer_support/" title="Technischer Support">Technischer Support</a>
+          </li>
+          <li class="page_item page-item-1336">
+              <a href="/_pages/unterstutzung/schulungen_und_vortraege/" title="Schulungen und Vorträge">Schulungen und Vorträge</a>
           </li>
           <li class="page_item page-item-1337">
-            <a href="/_pages/help/support" title="Support">Support</a>
+              <a href="/_pages/unterstutzung/mitarbeiten_und_helfen/" title="Mitarbeiten und Helfen">Mitarbeiten und Helfen</a>
+          </li>
+          <li class="page_item page-item-1338">
+              <a href="/_pages/unterstutzung/spenden/" title="Spenden und Fördern">Spenden und Fördern</a>
+          </li>
+          <li class="page_item page-item-1339">
+              <a href="/_pages/unterstutzung/materialien/" title="Materialien">Materialien</a>
           </li>
         </ul>
       </li>
     </replace>
-    <rules if-path="/_pages/help">
+    <rules if-path="/_pages/unterstutzung">
      <replace css:content="li#nav_help">
         <li class="current" id="nav_help">
-          <a href="/_pages/help" title="">Hilfe</a>
-          <ul class="children">
-            <li class="page_item page-item-1333">
-              <a href="/_pages/help/anleitungen" title="Anleitungen">Anleitungen</a>
-            </li>
-            <li class="page_item page-item-1335">
-              <a href="/_pages/help/faq" title="FAQs">FAQs</a>
-            </li>
-            <li class="page_item page-item-1337">
-              <a href="/_pages/help/support" title="Support">Support</a>
-            </li>
-          </ul>
+        <a href="/_pages/unterstutzung" title="">Support</a>
+        <ul class="children">
+          <li class="page_item page-item-1332">
+            <a href="/_pages/unterstutzung/anleitungen/" title="Anleitungen">Anleitungen</a>
+          </li>
+          <li class="page_item page-item-1333">
+              <a href="/_pages/unterstutzung/anleitungen/formatierungshilfe/" title="Formatierungshilfe">Formatierungshilfe</a>
+          </li>
+          <li class="page_item page-item-1334">
+            <a href="/_pages/unterstutzung/faq/" title="FAQs">FAQs</a>
+          </li>
+          <li class="page_item page-item-1335">
+              <a href="/_pages/unterstutzung/technischer_support/" title="Technischer Support">Technischer Support</a>
+          </li>
+          <li class="page_item page-item-1336">
+              <a href="/_pages/unterstutzung/schulungen_und_vortraege/" title="Schulungen und Vorträge">Schulungen und Vorträge</a>
+          </li>
+          <li class="page_item page-item-1337">
+              <a href="/_pages/unterstutzung/mitarbeiten_und_helfen/" title="Mitarbeiten und Helfen">Mitarbeiten und Helfen</a>
+          </li>
+          <li class="page_item page-item-1338">
+              <a href="/_pages/unterstutzung/spenden/" title="Spenden und Fördern">Spenden und Fördern</a>
+          </li>
+          <li class="page_item page-item-1339">
+              <a href="/_pages/unterstutzung/materialien/" title="Materialien">Materialien</a>
+          </li>
+        </ul>
         </li>
      </replace>
      <replace content="//li[@id='nav_home']/attribute::class"><xsl:attribute name="class"></xsl:attribute></replace>
