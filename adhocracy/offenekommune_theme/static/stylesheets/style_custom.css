@@ -43,7 +43,7 @@ height: 90px;
   background-image: url('/static_theme/static/images/gradient_navi_hover.png');
 }
 .menu.hlist {
-padding-top: 8px;
+  padding-top: 8px;
 }
 /* Button border, background, color */
 
@@ -391,4 +391,9 @@ label.armhint {
   background-position: 50% -47px;
   margin: 0 0 60px;
   padding-top: 30px;
+}
+
+/* override bootstrap stuff */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: auto;
 }
