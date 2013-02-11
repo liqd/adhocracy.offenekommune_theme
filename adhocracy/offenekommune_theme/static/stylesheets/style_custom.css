@@ -216,6 +216,19 @@ li.content_box:nth-child(2n+2) {
 #nav li {
   padding-top: 7px; /*make drop down menus work*/
 }
+#nav ul.children li {
+  line-height: inherit;
+  height: initial;
+}
+#nav ul.children ul.children {
+  position: relative;
+  background-image: none;
+  margin: 0;
+  min-width: 0;
+  padding: 5px 0 5px 0;
+  right: 0;
+}
+
 body.compact #nav li,
 body.compact #nav li a {
   height: 24px;
