@@ -2,20 +2,29 @@
   xmlns="http://namespaces.plone.org/diazo"
   xmlns:css="http://namespaces.plone.org/diazo/css"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmls:xi="http://www.w3.org/2001/XInclude">
+  xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <rules if-path="/_pages">
 
-    <!--Merge in wordpress javascript to generate tabs-->
     <replace css:content-children="div#external_scripts">
-      <xsl:variable name="url_aboutpage" select="concat('http://', $wordpress_backend, '/mehr-erfahren/')"/>
-      <xsl:copy-of select="document($url_aboutpage)/html/body/script[position() &gt; 1]"/>
+      <script type="text/javascript" src="/static_theme/static/scripts/jquery.js?=1.6.1"></script>
+      <script type='text/javascript' src='/static_theme/static/scripts/ui.core.js?ver=1.8.12'></script>
+      <script type='text/javascript' src='/static_theme/static/scripts/ui.widget.js?ver=1.8.12'></script>
+      <script type='text/javascript' src='/static_theme/static/scripts/ui.tabs.js?ver=1.8.12'></script>
+      <script type='text/javascript' src='/static_theme/static/scripts/cookie.js'></script>
+      <script type="text/javascript">
+        /* &lt;![CDATA[ */
+        var tab_settings = {
+            total: "1",
+            use_cookies: "1"
+        };
+        /* ]]&gt; */
+      </script>
+      <script type="text/javascript" src="/static_theme/static/scripts/post-ui-tabs.js?ver=1.0.4"></script>
       <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
     </replace>
-    <!--Merge in wordpress css to generate tabs-->
     <after theme="/html/head/title">
-      <xsl:variable name="url_aboutpage" select="concat('http://', $wordpress_backend, '/mehr-erfahren/')"/>
-      <xsl:copy-of select="document($url_aboutpage)/html/head/link[contains(@href, '.ui.')]"/>
+      <link rel='stylesheet' id='jquery-ui-tabs-css'  href='/static_theme/static/stylesheets/jquery.ui.all.css?ver=1.8.11' type='text/css' media='all'></link>
     </after>
 
   </rules>
