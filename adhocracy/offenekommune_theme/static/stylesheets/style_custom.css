@@ -229,8 +229,8 @@ li.content_box:nth-child(2n+2) {
   right: 0;
 }
 
-body.compact #nav li,
-body.compact #nav li a {
+body.compact #nav div.menu > ul > li,
+body.compact #nav div.menu > ul > li > a {
   height: 24px;
 }
 
