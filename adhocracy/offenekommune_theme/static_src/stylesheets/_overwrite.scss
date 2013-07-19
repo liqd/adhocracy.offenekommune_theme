@@ -78,8 +78,11 @@ a.button, #main .joyride-next-tip, #main .joyride-prev-tip {
         border: 1px solid $border !important;
     }
 
-    &.highlight, &.highlight:hover {
+    &.highlight, .register & {
         color: white !important;
+        &:hover {
+            color: white !important;
+        }
     }
 }
 
