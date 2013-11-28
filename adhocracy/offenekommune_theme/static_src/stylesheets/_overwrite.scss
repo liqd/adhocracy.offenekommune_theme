@@ -108,3 +108,8 @@ a.button, #main .joyride-next-tip, #main .joyride-prev-tip {
         line-height: 39px;
     }
 }
+
+// center event pager icons
+#col1 ul.content_list.events_pager > li:before {
+    left: 9px;
+}
