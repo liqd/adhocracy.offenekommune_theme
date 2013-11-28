@@ -51,30 +51,13 @@ label {
     }
 }
 
-.register {
-    line-height: 33px;
-}
-
-.register a.button {
-    border: 1px solid #3e753e;
-    font-size: 125%;
-    line-height: 33px;
-    padding-right: 18px;
-}
-
-/* Search */
-#searchform #searchsubmit, .list_form input.go {
-    color: #333;
-    background-image: url('/static_theme/static/images/button_grey.png');
-    border-width: 1px;
-    border-style: solid;
-    border-color: #c2c2c2;
-}
-
 /* button */
-a.button, #main .joyride-next-tip, #main .joyride-prev-tip {
+a.button,
+#main .joyride-next-tip,
+#main .joyride-prev-tip,
+#searchform #searchsubmit,
+.list_form input.go {
     color: $black;
-    line-height: 25px;
     border: 1px solid $border;
 
     &:hover, &:focus {
