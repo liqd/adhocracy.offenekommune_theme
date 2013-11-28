@@ -28,7 +28,11 @@ label {
             color: $fg1;
         }
     }
-    li a:hover, li.current a, li.current a:hover {
+    li a:hover,
+    li a:focus,
+    li.current a,
+    li.current a:hover,
+    li.current a:focus {
         background: white;
         color: $black;
     }
@@ -73,14 +77,14 @@ a.button, #main .joyride-next-tip, #main .joyride-prev-tip {
     line-height: 25px;
     border: 1px solid $border;
 
-    &:hover {
+    &:hover, &:focus {
         color: $black !important;
         border: 1px solid $border !important;
     }
 
     &.highlight, .register & {
         color: white !important;
-        &:hover {
+        &:hover, &:focus {
             color: white !important;
         }
     }
@@ -97,7 +101,7 @@ a.button, #main .joyride-next-tip, #main .joyride-prev-tip {
 
     background-color: #fff;
     @include background-image(linear-gradient(170deg, lighten(#ddd, 20%) 30%, #ddd));
-    &:hover {
+    &:hover, &:focus {
         background-color: darken(#fff, 7%);
         @include background-image(linear-gradient(170deg, lighten(#ddd, 10%) 30%, darken(#ddd, 10%)));
         text-decoration: none;
