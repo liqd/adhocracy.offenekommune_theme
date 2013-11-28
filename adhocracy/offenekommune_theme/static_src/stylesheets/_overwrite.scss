@@ -105,3 +105,14 @@ a.button,
 a.new_comment {
     color: $black;
 }
+
+// pager
+.pager {
+    .current, &:active {
+        color: $fg1;
+    }
+    a:hover,
+    a:focus {
+        color: $fg1;
+    }
+}
