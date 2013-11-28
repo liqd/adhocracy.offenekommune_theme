@@ -100,3 +100,8 @@ a.button,
 #col1 ul.content_list.events_pager > li:before {
     left: 9px;
 }
+
+// fix new comment button color for light background
+a.new_comment {
+    color: $black;
+}
