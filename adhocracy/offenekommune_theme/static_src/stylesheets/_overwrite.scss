@@ -11,8 +11,11 @@ label {
     height: 90px;
 
     img {
-        height: 120%; // HACK
+        height: 100%;
     }
+}
+body.logged_in #logo img {
+    height: 120%; // HACK
 }
 
 /* Subnav */
