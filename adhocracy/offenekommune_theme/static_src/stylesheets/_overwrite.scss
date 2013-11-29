@@ -124,3 +124,33 @@ a.new_comment {
         color: $fg1;
     }
 }
+
+.pager {
+    color: $fg1;
+    font-weight: bold;
+
+    .prev_page a, .next_page a, a,
+    .prev_page span, .next_page span, > span {
+        padding: 0 10px;
+        background: none;
+        border: 1px solid transparent;
+    }
+    .prev_page a, .next_page a, a {
+        color: $primary-color;
+    }
+    .prev_page span, .next_page span, > span {
+        color: inherit;
+    }
+    a:hover, a:focus {
+        background-color: $button-color;
+        @include background-image(linear-gradient(to bottom, lighten($button-color, 14%), $button-color));
+        border-color: $border;
+        color: inherit;
+    }
+    .current, a:active {
+        background-color: $button-color;
+        @include background-image(linear-gradient(to top, lighten($button-color, 14%), $button-color));
+        border-color: $border;
+        color: inherit;
+    }
+}
