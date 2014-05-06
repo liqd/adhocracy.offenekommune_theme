@@ -47,6 +47,7 @@ body.logged_in #logo img {
 }
 
 /* Content List */
+#left_block .content_list > li,
 #col1 .content_list > li {
     padding-left: 11px;
     padding-right: 11px;
@@ -57,6 +58,11 @@ body.logged_in #logo img {
     &:nth-child(even) {
         background: $bg1;
     }
+}
+#left_block .top_actions,
+#left_block .searchform {
+    padding-left: 11px;
+    padding-right: 11px;
 }
 
 /* button */
