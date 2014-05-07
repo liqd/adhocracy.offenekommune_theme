@@ -64,6 +64,9 @@ body.logged_in #logo img {
     padding-left: 11px;
     padding-right: 11px;
 }
+.searchform button[type="submit"] {
+    border: 1px solid $border;
+}
 
 /* button */
 a.button,
