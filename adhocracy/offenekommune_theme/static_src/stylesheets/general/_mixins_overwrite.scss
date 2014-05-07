@@ -1,6 +1,7 @@
-@mixin button-background($color) {
+@mixin button-background($color, $dark: $black, $light: white) {
     background-color: $color;
     @include background-image(linear-gradient(to bottom, lighten($color, 14%), $color));
+    color: contrast-color($color, $dark, $light);
 
     &:hover, &:focus {
         background-color: darken($color, 7%);
@@ -8,11 +9,12 @@
     }
 }
 
-
 @mixin button-round-background() {
     background-color: #fff;
     @include background-image(linear-gradient(to top, darken(#fff, 4%), #fff));
     border: 1px solid $border;
+    color: contrast-color(#fff, $black, white);
+
     &:hover, &:focus {
         background-color: darken(#fff, 2%);
         @include background-image(linear-gradient(to top, darken(#fff, 6%), darken(#fff, 2%)));
@@ -26,14 +28,17 @@
     padding: 0 10px;
     font-size: 11px;
 
-    color: $black;
     @include button-round-background();
+
     &:active, &.active {
         @include background-image(linear-gradient(to bottom, darken(#fff, 10%), #fff));
         @include box-shadow(1px 1px 2px #333 inset);
+        color: contrast-color(#fff, $black, white);
     }
     .inactive & {
         background: $bg2 !important;
+        color: $border !important;
+        cursor: default;
         @include box-shadow(none);
     }
 }
